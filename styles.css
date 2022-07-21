@@ -709,14 +709,23 @@ footer a{
 
     #portfolio .fila{
         display: block;
+        margin: 0;
     }
 
+
     #portfolio .fila .proyecto{
-        margin: 10px auto;
+        margin: 18px auto;
     }
 
     #portfolio .fila .proyecto img{
-        width: 92%;
+        width: 100%;
+        filter: grayscale(0);
+    }
+    
+    #portfolio .fila .proyecto .info{
+        opacity: 1;
+        bottom: 0px;
+
     }
 
     #portfolio .tipo-proyecto {
