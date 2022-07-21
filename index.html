@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/d93e52d8e7.js" crossorigin="anonymous"></script>
@@ -25,16 +25,16 @@
                     <h1>DS</h1>
                     <nav id="nav">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#conocimientos" onclick="seleccionar(this)">CONOCIMIENTOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
                     <!-- ICONOS DEL MENU RESPONSIVE -->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
@@ -48,7 +48,7 @@
                 </div>
             </header>
             <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
+                <p class="bienvenida"><span>Bienvenidos</span></p>
                 <h2>Soy <span>Daniel Salgado</span>, Desarrollador Web</h2>
                 <p class="mensaje">"La perseverancia y determinación son mis más fuertes cualidades. Soy capaz de mejorar y aprender a diario de mis victorias y de mis errores con el fin de lograr mis metas."</p>
                 <a href="#portfolio">Ir a Portafolio</a>
@@ -122,10 +122,10 @@
             <div class="skill">
                 <div class="info">
                     <p><span class="lista"><span class="iconify" data-icon="file-icons:adobe-photoshop"></span></span>PHOTOSHOP</p>
-                    <span class="ps">65%</span>
+                    <span class="porcentaje">65%</span>
                 </div>
                 <div class="barra">
-                    <div id="javascript" class=""></div>
+                    <div id="ps" class=""></div>
                 </div>
             </div>
 
@@ -178,7 +178,7 @@
     <!-- SECCION PORTFOLIO -->
 
     <section id="portfolio">
-        <h3 class="titulo-seccion">PORTFOLIO<span>| PROYECTOS</span></h3>
+        <h3 class="titulo-seccion">PORTFOLIO  <span>|  PROYECTOS</span></h3>
 
         <div class="tipo-proyecto">
             <h3>Proyectos <span> JavasCript </span></h3>
@@ -670,5 +670,6 @@
     </footer>
 
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

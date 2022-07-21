@@ -1,0 +1,47 @@
+//Función que aplica el estilo a la opción seleccionada en la barra de Menú Responsive
+
+function seleccionar(link) {
+    var opciones = document.querySelectorAll('#links a')
+    opciones[0].className = '';
+    opciones[1].className = '';
+    opciones[2].className = '';
+    opciones[3].className = '';
+    opciones[4].className = '';
+    link.className = "seleccionado";
+
+    var x = document.getElementById('nav');
+    x.className = '';
+}
+
+//Función que muestra el menú responsive
+
+function responsiveMenu() {
+    var x = document.getElementById("nav");
+    if(x.className===''){
+        x.className = 'responsive';
+    } else {
+        x.className = '';
+    }
+}
+
+//Detección del scrolling para aplicar animación a barra de herramientas y conocimientos
+
+window.onscroll = () => {
+    efectoConocimientos()
+};
+
+function efectoConocimientos() {
+    var conocimientos = document.getElementById('conocimientos');
+    var distancia = window.innerHeight - conocimientos.getBoundingClientRect().top;
+    if (distancia >= 300) {
+        document.getElementById('vsc').classList.add('barra-progreso1')
+        document.getElementById('git').classList.add('barra-progreso2')
+        document.getElementById('github').classList.add('barra-progreso3')
+        document.getElementById('mbs').classList.add('barra-progreso4')
+        document.getElementById('ps').classList.add('barra-progreso5')
+        document.getElementById('excel').classList.add('barra-progreso6')
+        document.getElementById('html').classList.add('barra-progreso7')
+        document.getElementById('css').classList.add('barra-progreso8')
+        document.getElementById('js').classList.add('barra-progreso9')
+    }
+}
