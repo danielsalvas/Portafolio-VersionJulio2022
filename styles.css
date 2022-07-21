@@ -715,9 +715,20 @@ footer a{
         margin: 10px auto;
     }
 
+    #portfolio .fila .proyecto img{
+        width: 92%;
+    }
+
     #portfolio .tipo-proyecto {
         margin: 20px;
         text-align: center;
+    }
+
+    .eins-modal-preview img{
+        width: 250px;
+        height: 130px;
+        margin-bottom: 35px;
+        border-radius: 10px;
     }
 
     #contacto {
