@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="/img/imgweb.png">
     <title>Daniel Salgado</title>
 </head>
@@ -67,10 +68,10 @@
             <p href="" class="titulo-seccion">Sobre Mi</p>
             <h2>Hola, soy <span>Daniel Salgado</span></h2>
             <h3>Ingeniero Industrial<span> | Desarrollador Web</span></h3><br>
-            <p>Soy graduado de la Universidad de El Salvador. Desde 2020 me he dedicado al Ecommerce en El Salvador con mi propia marca llamada FORSTORE, obteniendo muy buenos resultados con productos tecnologicos chinos importados personalmente (más de $45,000 USD en online sales Noviembre 2020 - Mayo 2022). Utilizando diferentes herramientas profesionales de Marketing Digital como Adobe Photoshop y Facebook ADS.</p><br>
+            <p>Soy graduado de la Universidad de El Salvador. Desde 2020 me he dedicado al Ecommerce en El Salvador con mi propia marca, obteniendo muy buenos resultados con productos tecnologicos chinos importados personalmente (más de $45,000 USD en ventas Noviembre 2020 - Mayo 2022). Utilizando herramientas de Marketing Digital como Adobe Photoshop y Facebook ADS.</p><br>
 
-            <p>Soy una persona que le encanta seguir aprendiendo nuevas habilidades y he encontrado un área absolutamente genial en el Desarrollo Web Front-End. He trabajado en diferentes proyectos donde he aplicado mis conocimientos de estilos de CSS y también aplicaciones web con un contenido dinámico con JavaScript. Siempre muy emocionado y dispuesto a seguir aprendiendo nuevas tecnologías.</p>
-            <a href="https://drive.google.com/file/d/1vwL61uJlvzIMvVDqO-165UhAGlCsLp2L/view?usp=sharing" target="_blank">Descargar CV</a>
+            <p>Soy una persona que le encanta seguir aprendiendo nuevas habilidades y he encontrado un área absolutamente genial en el Desarrollo Web Frontend. He trabajado en diferentes proyectos donde he aplicado mis conocimientos de estilos de CSS y también aplicaciones web con un contenido dinámico con JavaScript. Siempre muy emocionado y dispuesto a seguir aprendiendo nuevas tecnologías.</p>
+            <a href="/DanielSalgadoResume.pdf" target="_blank">Descargar CV</a>
         </div>
     </section>
 
@@ -181,13 +182,16 @@
     <section id="portfolio">
         <h3 class="titulo-seccion">PORTFOLIO  <span>|  PROYECTOS</span></h3>
 
-        <div class="tipo-proyecto">
-            <h3>Proyectos <span> JavasCript </span></h3>
-            <img src="/img/js-icon.png" alt="">
+        <div class="work__filters">
+            <span class="work__item active-work" data-filter="all">Todos</span>
+            <span class="work__item" data-filter=".react">React <i class="fa-brands fa-react"></i></span>
+            <span class="work__item" data-filter=".js">JavaScript <i class="fa-brands fa-square-js"></i></span>
+            <span class="work__item" data-filter=".fe">Fetch API <i class="fa-solid fa-cloud-arrow-down"></i></span>
+            <span class="work__item" data-filter=".css">CSS <i class="fa-brands fa-css3-alt"></i></span>
         </div>
-
-        <div class="fila">
-            <div class="proyecto">
+    
+    <div class="portfolio__container">
+            <div class="proyecto mix css">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-messi"><img src="img/img3.png" alt=""></a>
                 <div class="info">
@@ -196,7 +200,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-carrito"><img src="img/img4.png" alt=""></a>
                 <div class="info">
@@ -205,7 +209,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-formulario"><img src="img/img5.png" alt=""></a>
                 <div class="info">
@@ -213,10 +217,8 @@
                     <p>CSS, HTML, JS</p>
                 </div>
             </div>
-        </div>
 
-        <div class="fila">
-            <div class="proyecto">
+            <div class="proyecto mix css">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-portafolio"><img src="img/img6.png" alt=""></a>
                 <div class="info">
@@ -225,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-buscador"><img src="img/img7.png" alt=""></a>
                 <div class="info">
@@ -234,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-cotizador"><img src="img/img8.png" alt=""></a>
                 <div class="info">
@@ -242,10 +244,8 @@
                     <p>CSS, HTML, JS</p>
                 </div>
             </div>
-        </div>
 
-        <div class="fila">
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-gastosemanal"><img src="img/img9-1.png" alt=""></a>
                 <div class="info">
@@ -254,7 +254,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-Administrarcitas"><img src="img/img10-1.png" alt=""></a>
                 <div class="info">
@@ -263,7 +263,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix js">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-crm"><img src="img/img11-1.png" alt=""></a>
                 <div class="info">
@@ -271,16 +271,8 @@
                     <p>CSS, HTML, JS</p>
                 </div>
             </div>
-        </div>
 
-        <div class="tipo-proyecto">
-            <h3>Proyectos <span> FETCH API </span></h3>
-            <img src="/img/js-icon.png" alt="">
-            <img src="/img/fetch.png" alt="">
-        </div>
-
-        <div class="fila">
-            <div class="proyecto">
+            <div class="proyecto mix fe">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-clima"><img src="img/img12-1.png" alt=""></a>
                 <div class="info">
@@ -289,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix fe">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-imagenes"><img src="img/img13-1.png" alt=""></a>
                 <div class="info">
@@ -298,7 +290,7 @@
                 </div>
             </div>
 
-            <div class="proyecto">
+            <div class="proyecto mix fe">
                 <div class="overlay"></div>
                     <a data-modal-id="pw-criptomonedas"><img src="img/img14-1.png" alt=""></a>
                 <div class="info">
@@ -306,7 +298,16 @@
                     <p>CSS, HTML, JS, FETCH API</p>
                 </div>
             </div>
-        </div>
+
+            <div class="proyecto mix react">
+                <div class="overlay"></div>
+                    <a data-modal-id="pw-criptomonedas"><img src="img/img14-1.png" alt=""></a>
+                <div class="info">
+                    <h4>Proyecto API Criptomonedas</h4>
+                    <p>CSS, HTML, JS, FETCH API</p>
+                </div>
+            </div>
+    </div>
 
         <!-- MODAL SECTION -->
 
@@ -639,18 +640,18 @@
     <!-- SECCION CONTACTO -->
 
     <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <h3 class="titulo-seccion">Envíame un correo <i class="fa-solid fa-envelope-circle-check"></i></h3>
         <div class="contenedor-form">
             <form class="form" action="https://formspree.io/f/mzboobeg" method="POST">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name">
-                    <input type="text" placeholder="Dirección de Email" class="input-mitad" name="email">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" required>
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad" name="email" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full" name="asunto">
+                    <input type="text" placeholder="Tema..." class="input-full" name="asunto" required>
                 </div>
                 <div class="fila">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
 
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
@@ -670,6 +671,7 @@
         </div>
     </footer>
 
+    <script src="/mixitup.min.js"></script>
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
     <script src="/script.js"></script>
 </body>

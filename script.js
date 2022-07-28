@@ -45,3 +45,31 @@ function efectoConocimientos() {
         document.getElementById('js').classList.add('barra-progreso9')
     }
 }
+
+//Función MixiItUp PORTFOLIO
+
+let mixerPortfolio = mixitup('.portfolio__container', {
+    selectors: {
+        target: '.proyecto'
+    },
+    "animation": {
+        "duration": 292,
+        "nudge": false,
+        "reverseOut": false,
+        "effects": "fade scale(0.01)"
+    }
+});
+
+
+//Link filtro activo en Portfolio
+
+const linkWork = document.querySelectorAll('.work__item')
+
+function activeWork(params) {
+    linkWork.forEach( l => l.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeWork))
+
+
