@@ -433,26 +433,27 @@ html {
 
 .proyecto img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     transition: .5s;
 }
 
 #portfolio .proyecto:hover img {
     cursor: pointer;
-    filter: grayscale(0);
 }
 
 #portfolio .proyecto .info{
     position: absolute;
     left: 0;
     background-color: rgba(0,0,0,.8);
-    color: var(--primary);
+    color: white;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
     opacity: 0;
     bottom: -40px;
     transition: .5s;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 #portfolio .proyecto:hover .info{
@@ -628,7 +629,7 @@ footer a{
 
 /* SECCION RESPONSIVE */
 
-@media screen and (max-width:800px){
+@media screen and (max-width:912px){
     
     nav {
         display: none;

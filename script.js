@@ -53,7 +53,7 @@ let mixerPortfolio = mixitup('.portfolio__container', {
         target: '.proyecto'
     },
     "animation": {
-        "duration": 292,
+        "duration": 300,
         "nudge": false,
         "reverseOut": false,
         "effects": "fade scale(0.01)"
