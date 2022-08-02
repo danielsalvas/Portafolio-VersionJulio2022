@@ -279,6 +279,10 @@ html {
     color: white;
 }
 
+.skill .info .lista img{
+    width: 18px;
+}
+
 .skill .barra {
     background-color: #919191;
     width: 100%;
@@ -347,9 +351,23 @@ html {
 
 .skill .barra .barra-progreso9{
     background-color: white;
-    width: 70%;
+    width: 80%;
     height: 6px;
     animation: progreso9 2s forwards;
+}
+
+.skill .barra .barra-progreso10{
+    background-color: white;
+    width: 75%;
+    height: 6px;
+    animation: progreso10 2s forwards;
+}
+
+.skill .barra .barra-progreso11{
+    background-color: white;
+    width: 65%;
+    height: 6px;
+    animation: progreso11 2s forwards;
 }
 
 /* Animaciones de las barras */
@@ -396,7 +414,17 @@ html {
 
 @keyframes progreso9{
     0%{width: 0;}
-    100%{width: 70%;}
+    100%{width: 80%;}
+}
+
+@keyframes progreso10{
+    0%{width: 0;}
+    100%{width: 75%;}
+}
+
+@keyframes progreso11{
+    0%{width: 0;}
+    100%{width: 65%;}
 }
 
 /* SECCION PORTFOLIO */
