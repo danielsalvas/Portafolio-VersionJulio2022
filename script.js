@@ -45,7 +45,7 @@ function efectoConocimientos() {
         document.getElementById('tailwind').classList.add('barra-progreso9')
         document.getElementById('js').classList.add('barra-progreso10')
         document.getElementById('react').classList.add('barra-progreso11')
-        document.getElementById('native').classList.add('barra-progreso12')
+        document.getElementById('typescript').classList.add('barra-progreso12')
     }
 }
 
