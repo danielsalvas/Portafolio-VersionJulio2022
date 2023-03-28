@@ -31,7 +31,7 @@ window.onscroll = () => {
 };
 
 function efectoConocimientos() {
-    var conocimientos = document.getElementById('conocimientos');
+    var conocimientos = document.getElementById('knowledge');
     var distancia = window.innerHeight - conocimientos.getBoundingClientRect().top;
     if (distancia >= 300) {
         document.getElementById('vsc').classList.add('barra-progreso1')

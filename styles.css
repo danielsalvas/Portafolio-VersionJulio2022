@@ -23,14 +23,14 @@ html {
     scroll-behavior: smooth;
 }
 
-#inicio{
+#home{
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("/img/portada.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
 
-#inicio .contenido header{
+#home .contenido header{
     background-color: var(--dark2);
     position: fixed;
     width: 100%;
@@ -38,7 +38,7 @@ html {
     top: 0;
 }
 
-#inicio .contenido header .contenido-header{
+#home .contenido header .contenido-header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -47,18 +47,18 @@ html {
     padding: 10px 20px;
 }
 
-#inicio .contenido header .contenido-header h1{
+#home .contenido header .contenido-header h1{
     text-align: center;
     color: var(--primary);
 }
 
-#inicio .contenido header .contenido-header nav ul{
+#home .contenido header .contenido-header nav ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-#inicio .contenido header .contenido-header nav ul li a{
+#home .contenido header .contenido-header nav ul li a{
     text-decoration: none;
     color: white;
     margin: 0 12px;
@@ -66,11 +66,11 @@ html {
     transition: .5s;
 }
 
-#inicio .contenido header .contenido-header nav ul li a:hover{
+#home .contenido header .contenido-header nav ul li a:hover{
     color: var(--primary);
 }
 
-#inicio .contenido header .contenido-header .redes a{
+#home .contenido header .contenido-header .redes a{
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -79,15 +79,15 @@ html {
     font-size: 25px;
 }
 
-#inicio .contenido header .contenido-header .redes a:hover{
+#home .contenido header .contenido-header .redes a:hover{
     color: var(--primary);
 }
 
-#inicio .contenido header .contenido-header .seleccionado{
+#home .contenido header .contenido-header .seleccionado{
     color: var(--primary);
 }
 
-#inicio .contenido .presentacion{
+#home .contenido .presentacion{
     max-width: 1100px;
     height: 100vh;
     margin: auto;
@@ -98,14 +98,14 @@ html {
     justify-content: center;
 }
 
-#inicio .contenido .presentacion .bienvenida{
+#home .contenido .presentacion .bienvenida{
     font-size: 22px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 /* EFECTO ESCRITURA WEB */
-#inicio .contenido .presentacion .bienvenida span{
+#home .contenido .presentacion .bienvenida span{
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
@@ -124,25 +124,25 @@ html {
 }
 
 
-#inicio .contenido .presentacion h2{
+#home .contenido .presentacion h2{
     font-size: 55px;
     margin-bottom: 25px;
     text-align: center;
 }
 
-#inicio .contenido .presentacion h2 span{
+#home .contenido .presentacion h2 span{
     font-size: 55px;
     color: var(--primary);
 }
 
-#inicio .contenido .presentacion .mensaje{
+#home .contenido .presentacion .mensaje{
     max-width: 700px;
     margin: 25px auto;
     font-size: 22px;
     text-align: center;
 }
 
-#inicio .contenido .presentacion a{
+#home .contenido .presentacion a{
     text-decoration: none;
     display: inline-block;
     margin: 25px;
@@ -155,7 +155,7 @@ html {
     transition: .5s;
 }
 
-#inicio .contenido .presentacion a:hover{
+#home .contenido .presentacion a:hover{
     background-color: var(--primary);
 }
 
@@ -166,7 +166,7 @@ html {
 
 /* SECCION SOBRE MI */
 
-#sobremi{
+#aboutme{
     max-width: 1000px;
     margin: auto;
     padding: 80px 15px;
@@ -174,19 +174,19 @@ html {
     display: flex;
 }
 
-#sobremi .contenedor-foto{
+#aboutme .contenedor-foto{
     width: 2200px;
     margin-right: 80px;
 }
 
-#sobremi .contenedor-foto img{
+#aboutme .contenedor-foto img{
     padding: 20px;
     width: 100%;
     border-radius: 20px;
     background-color: #f3f3f3;
 }
 
-#sobremi .sobremi .titulo-seccion{
+#aboutme .aboutme .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
@@ -195,32 +195,32 @@ html {
     text-decoration-thickness: 5px;
 }
 
-#sobremi .sobremi h2{
+#aboutme .aboutme h2{
     font-size: 34px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 12px;
 }
 
-#sobremi .sobremi h2 span{
+#aboutme .aboutme h2 span{
     color: var(--primary);
 }
 
-#sobremi .sobremi h3{
+#aboutme .aboutme h3{
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-#sobremi .sobremi p{
+#aboutme .aboutme p{
     font-size: 14px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
 }
 
-#sobremi .sobremi a{
+#aboutme .aboutme a{
     display: inline-block;
     text-decoration: none;
     color: var(--dark1);
@@ -230,7 +230,7 @@ html {
     margin-top: 30px;
     transition: .5s;
 }
-#sobremi .sobremi a:hover{
+#aboutme .aboutme a:hover{
     background-color: var(--primary);
     color: white;
 }
@@ -582,12 +582,12 @@ html {
 
 /* SECCION CONTACTO */
 
-#contacto{
+#contact{
     padding: 100px 15px;
     background-color: #eeeeee;
 }
 
-#contacto .titulo-seccion {
+#contact .titulo-seccion {
     margin-bottom: 20px;
     text-align: center;
     font-size: 22px;
@@ -598,42 +598,42 @@ html {
     text-decoration-thickness: 5px;
 }
 
-#contacto .titulo-seccion {
+#contact .titulo-seccion {
     margin-bottom: 20px;
 }
 
-#contacto .contenedor-form {
+#contact .contenedor-form {
     max-width: 1100px;
     margin: auto;
 }
 
-#contacto .contenedor-form .fila{
+#contact .contenedor-form .fila{
     margin-bottom:15px ;
 }
 
-#contacto .contenedor-form .mitad{
+#contact .contenedor-form .mitad{
     display: flex;
     justify-content: space-between;
 }
 
 
-#contacto .contenedor-form input, 
-#contacto .contenedor-form textarea {
+#contact .contenedor-form input, 
+#contact .contenedor-form textarea {
     padding: 20px;
     border-radius: 20px;
     border: none;
     border: 1px solid #919191;
 }
 
-#contacto .contenedor-form .mitad input{
+#contact .contenedor-form .mitad input{
     width: 48%;
 }
 
-#contacto .contenedor-form .input-full{
+#contact .contenedor-form .input-full{
     width: 100%;
 }
 
-#contacto .btn-enviar {
+#contact .btn-enviar {
     display: block;
     margin: auto;
     cursor: pointer;
@@ -643,7 +643,7 @@ html {
     font-weight: bold;
 }
 
-#contacto .btn-enviar:hover {
+#contact .btn-enviar:hover {
     background-color: var(--primary);
     color: white;
 }
@@ -697,34 +697,34 @@ footer a{
         cursor: pointer;
     }
 
-    #inicio .contenido .presentacion h2{
+    #home .contenido .presentacion h2{
         font-size: 40px;
     }
 
-    #sobremi{
+    #aboutme{
         padding: 50px;
         display: block;
     }
-    #sobremi .contenedor-foto{
+    #aboutme .contenedor-foto{
         max-width: 250px;
         margin: auto;
     }
-    #sobremi .contenedor-foto img {
+    #aboutme .contenedor-foto img {
         padding: 8px;
     }
 
-    #sobremi .sobremi .titulo-seccion{
+    #aboutme .aboutme .titulo-seccion{
         text-align: center;
     }
-    #sobremi .sobremi h2{
+    #aboutme .aboutme h2{
         font-size: 25px;
         text-align: center;
     }
-    #sobremi .sobremi p{
+    #aboutme .aboutme p{
         text-align: justify;
     }
 
-    #sobremi .sobremi {
+    #aboutme .aboutme {
         text-align: center;
     }
 
@@ -789,16 +789,16 @@ footer a{
         border-radius: 10px;
     }
 
-    #contacto {
+    #contact {
         padding: 50px 15px;
     }
 
-    #contacto .contenedor-form .mitad{
+    #contact .contenedor-form .mitad{
         margin-bottom: 15px;
         display: block;
     }
 
-    #contacto .contenedor-form .mitad input{
+    #contact .contenedor-form .mitad input{
         width: 100%;
         margin-bottom: 16px;
     }
