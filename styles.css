@@ -517,9 +517,21 @@ html {
     border-radius: .5rem;
 }
 
+.work__item img {
+    width: 15px;
+    position: relative;
+    top: 2px;
+    background-color: black;
+    border-radius: 2px;
+}
+
 .active-work {
     background-color: var(--primary);
     color: white;
+}
+
+.active-work img {
+    background-color: white;
 }
 
 /* MODALS */
