@@ -34,11 +34,11 @@ function efectoConocimientos() {
     var conocimientos = document.getElementById('knowledge');
     var distancia = window.innerHeight - conocimientos.getBoundingClientRect().top;
     if (distancia >= 300) {
-        document.getElementById('vsc').classList.add('barra-progreso1')
-        document.getElementById('git').classList.add('barra-progreso2')
-        document.getElementById('github').classList.add('barra-progreso3')
-        document.getElementById('mbs').classList.add('barra-progreso4')
-        document.getElementById('ps').classList.add('barra-progreso5')
+        document.getElementById('mbs').classList.add('barra-progreso1')
+        document.getElementById('ps').classList.add('barra-progreso2')
+        document.getElementById('vsc').classList.add('barra-progreso3')
+        document.getElementById('git').classList.add('barra-progreso4')
+        document.getElementById('github').classList.add('barra-progreso5')
         document.getElementById('next').classList.add('barra-progreso6')
         document.getElementById('html').classList.add('barra-progreso7')
         document.getElementById('css').classList.add('barra-progreso8')

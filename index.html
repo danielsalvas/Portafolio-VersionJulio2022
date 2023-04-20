@@ -1,989 +1,1759 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d93e52d8e7.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/eins-modal/dist/css/eins-modal.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d93e52d8e7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="icon" href="/img/imgweb.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/imgweb.png" />
     <title>Daniel Salgado</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- SECCION INICIO -->
-    
+
     <section id="home">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1>DS</h1>
-                    <nav id="nav">
-                        <ul id="links">
-                            <li><a href="#home" class="seleccionado" onclick="seleccionar(this)">HOME</a></li>
-                            <li><a href="#aboutme" onclick="seleccionar(this)">ABOUT ME</a></li>
-                            <li><a href="#knowledge" onclick="seleccionar(this)">KNOWLEDGE</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contact" onclick="seleccionar(this)">CONTACT</a></li>
-                        </ul>
-                    </nav>
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>DS</h1>
+            <nav id="nav">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#home"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a href="#aboutme" onclick="seleccionar(this)">ABOUT ME</a>
+                </li>
+                <li>
+                  <a href="#knowledge" onclick="seleccionar(this)">KNOWLEDGE</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+                <li>
+                  <a href="#contact" onclick="seleccionar(this)">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
 
-                    <!-- ICONOS DE LAS REDES SOCIALES -->
-                    <div class="redes">
-                        <a href="https://www.linkedin.com/in/daniel-salgado-a518a5133/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/danielsalvas" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.instagram.com/danielsalvas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-
-                    <!-- ICONOS DEL MENU RESPONSIVE -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-                    
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida"><span>Welcome</span></p>
-                <h2>I'm <span>Daniel </span>, Frontend Developer</h2>
-                <p class="mensaje">"I'm capable to improve and learn everyday from my victories and my mistakes to achieve my goals."</p>
-                <a href="#portfolio">Go to Portfolio</a>
+            <!-- ICONOS DE LAS REDES SOCIALES -->
+            <div class="redes">
+              <a
+                href="https://www.linkedin.com/in/daniel-salgado-a518a5133/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/danielsalvas" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/danielsalvas/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
+
+            <!-- ICONOS DEL MENU RESPONSIVE -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida"><span>Welcome</span></p>
+          <h2>I'm <span>Daniel </span>, Frontend Developer</h2>
+          <p class="mensaje">
+            "I'm capable to improve and learn everyday from my victories and my
+            mistakes to achieve my goals."
+          </p>
+          <a href="#portfolio">Go to Portfolio</a>
         </div>
+      </div>
     </section>
 
     <!-- SECCION SOBRE MI -->
 
     <section id="aboutme">
-        <div class="contenedor-foto">
-            <img src="img/perfil.jpg" alt="">
-        </div>
-        <div class="aboutme">
-            <p href="" class="titulo-seccion">About Me</p>
-            <h2>Hey There, I'm <span>Daniel</span></h2>
-            <h3>Frontend Developer<span> | Industrial Engineer</span></h3><br>
-            <p>I love learning new tech abilities and I found a very cool area in Frontend Web Development. I've worked on amazing projects applying my knowledge in Javascript Vanilla, React JS, and Typescript. For styles, I love to use frameworks like Tailwind CSS, but also I've used sheet styles with CSS. I have Knowledge of React Frameworks like Next.JS and data content structure with services like Google Firebase for the backend.</p>
-            <a href="/DanielSalgadoResume.pdf" target="_blank">Download Resume</a>
-        </div>
+      <div class="contenedor-foto">
+        <img src="img/perfil.jpg" alt="" />
+      </div>
+      <div class="aboutme">
+        <p href="" class="titulo-seccion">About Me</p>
+        <h2>Hey There, I'm <span>Daniel</span></h2>
+        <h3>Frontend Developer<span> | Industrial Engineer</span></h3>
+        <br />
+        <p>
+          I love learning new tech abilities and I found a very cool area in
+          Frontend Web Development. I've worked on amazing projects applying my
+          knowledge in Javascript Vanilla, React JS, and Typescript. For styles,
+          I love to use frameworks like Tailwind CSS, but also I've used sheet
+          styles with CSS. I have Knowledge of React Frameworks like Next.JS and
+          data content structure with services like Google Firebase for the
+          backend.
+        </p>
+        <a href="/DanielSalgadoResume.pdf" target="_blank">Download Resume</a>
+      </div>
     </section>
 
     <!-- SECCION HABILIDADES Y CONOCIMIENTOS -->
 
-    <div id= "knowledge" class="contenedor">
+    <div id="knowledge" class="contenedor">
+      <div class="contenedor-tools" id="tools">
+        <h3>TOOLS</h3>
 
-        <div class="contenedor-tools" id="tools">
-            <h3>TOOLS</h3>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-facebook"></i></span>FACEBOOK ADS (ADVANCED)</p>
-                    <span class="porcentaje">90%</span>
-                </div>
-                <div class="barra">
-                    <div id="mbs" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><span class="iconify" data-icon="file-icons:adobe-photoshop"></span></span>PHOTOSHOP (INTERMEDIATE)</p>
-                    <span class="porcentaje">65%</span>
-                </div>
-                <div class="barra">
-                    <div id="ps" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-solid fa-laptop-code"></i></span>VS CODE (INTERMEDIATE)</p>
-                    <span class="porcentaje">75%</span>
-                </div>
-                <div class="barra">
-                    <div id="vsc" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-git-alt"></i></span>GIT (INTERMEDIATE)</p>
-                    <span class="porcentaje">80%</span>
-                </div>
-                <div class="barra">
-                    <div id="git" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-github"></i></span>GITHUB (INTERMEDIATE)</p>
-                    <span class="porcentaje">75%</span>
-                </div>
-                <div class="barra">
-                    <div id="github" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><img src="./img/next.png" alt=""></span>NEXT.JS (BASIC)</p>
-                    <span class="porcentaje">60%</span>
-                </div>
-                <div class="barra">
-                    <div id="next" class=""></div>
-                </div>
-            </div>
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-facebook"></i></span
+              >FACEBOOK ADS (ADVANCED)
+            </p>
+            <span class="porcentaje">90%</span>
+          </div>
+          <div class="barra">
+            <div id="mbs" class=""></div>
+          </div>
         </div>
 
-        <div class="contenedor-skills" id="skills">
-            <h3>KNOWLEDGE</h3>
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-html5"></i></span>HTML (INTERMEDIATE)</p>
-                    <span class="porcentaje">70%</span>
-                </div>
-                <div class="barra">
-                    <div id="html" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-css3-alt"></i></span>CSS (INTERMEDIATE)</p>
-                    <span class="porcentaje">70%</span>
-                </div>
-                <div class="barra">
-                    <div id="css" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><img src="./img/Tailwind_Logo1.png" alt=""></span>TAILWIND CSS (ADVANCED)</p>
-                    <span class="porcentaje">80%</span>
-                </div>
-                <div class="barra">
-                    <div id="tailwind" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-js-square"></i></span>JAVASCRIPT (INTERMEDIATE)</p>
-                    <span class="porcentaje">75%</span>
-                </div>
-                <div class="barra">
-                    <div id="js" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><i class="fa-brands fa-react"></i></span>REACT (INTERMEDIATE)</p>
-                    <span class="porcentaje">75%</span>
-                </div>
-                <div class="barra">
-                    <div id="react" class=""></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <div class="info">
-                    <p><span class="lista"><img src="./img/typescript.png" alt=""></span>TYPESCRIPT (INTERMEDIATE)</p>
-                    <span class="porcentaje">70%</span>
-                </div>
-                <div class="barra">
-                    <div id="typescript" class=""></div>
-                </div>
-            </div>
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"
+                ><span
+                  class="iconify"
+                  data-icon="file-icons:adobe-photoshop"
+                ></span></span
+              >PHOTOSHOP (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">65%</span>
+          </div>
+          <div class="barra">
+            <div id="ps" class=""></div>
+          </div>
         </div>
 
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-solid fa-laptop-code"></i></span
+              >VS CODE (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">75%</span>
+          </div>
+          <div class="barra">
+            <div id="vsc" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-git-alt"></i></span>GIT
+              (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">70%</span>
+          </div>
+          <div class="barra">
+            <div id="git" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-github"></i></span
+              >GITHUB (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">75%</span>
+          </div>
+          <div class="barra">
+            <div id="github" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><img src="./img/next.png" alt="" /></span
+              >NEXT.JS (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">75%</span>
+          </div>
+          <div class="barra">
+            <div id="next" class=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor-skills" id="skills">
+        <h3>KNOWLEDGE</h3>
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-html5"></i></span>HTML
+              (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">70%</span>
+          </div>
+          <div class="barra">
+            <div id="html" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-css3-alt"></i></span
+              >CSS (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">70%</span>
+          </div>
+          <div class="barra">
+            <div id="css" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"
+                ><img src="./img/Tailwind_Logo1.png" alt="" /></span
+              >TAILWIND CSS (ADVANCED)
+            </p>
+            <span class="porcentaje">80%</span>
+          </div>
+          <div class="barra">
+            <div id="tailwind" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-js-square"></i></span
+              >JAVASCRIPT (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">75%</span>
+          </div>
+          <div class="barra">
+            <div id="js" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"><i class="fa-brands fa-react"></i></span>REACT
+              (INTERMEDIATE)
+            </p>
+            <span class="porcentaje">75%</span>
+          </div>
+          <div class="barra">
+            <div id="react" class=""></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="info">
+            <p>
+              <span class="lista"
+                ><img src="./img/typescript.png" alt="" /></span
+              >TYPESCRIPT (BASIC)
+            </p>
+            <span class="porcentaje">60%</span>
+          </div>
+          <div class="barra">
+            <div id="typescript" class=""></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- SECCION PORTFOLIO -->
 
     <section id="portfolio">
-        <h3 class="titulo-seccion">PORTFOLIO  <span>|  PROJECTS</span></h3>
+      <h3 class="titulo-seccion">PORTFOLIO <span>| PROJECTS</span></h3>
 
-        <div class="work__filters">
-            <span class="work__item active-work" data-filter="all">All</span>
-            <span class="work__item" data-filter=".fav">Best Apps <i class="fa-solid fa-heart"></i></span>
-            <span class="work__item" data-filter=".ts">Typescript <img src="./img/ts.png" alt=""></span>
-            <span class="work__item" data-filter=".react">React <i class="fa-brands fa-react"></i></span>  
-            <span class="work__item" data-filter=".js">JS Vanilla <i class="fa-brands fa-square-js"></i></span>  
-            <span class="work__item" data-filter=".native">Native<i class="fa-brands fa-react"></i></span>
-            <span class="work__item" data-filter=".fe">Fetch API <i class="fa-solid fa-cloud-arrow-down"></i></span>
-        </div>
-    
-    <div class="portfolio__container">
+      <div class="work__filters">
+        <span class="work__item active-work" data-filter="all">All</span>
+        <span class="work__item" data-filter=".fav"
+          >Best Apps <i class="fa-solid fa-heart"></i
+        ></span>
+        <span class="work__item" data-filter=".ts"
+          >Typescript <img src="./img/ts.png" alt=""
+        /></span>
+        <span class="work__item" data-filter=".next"
+          >Next JS<i class="fa-brands fa-react"></i
+        ></span>
+        <span class="work__item" data-filter=".react"
+          >React <i class="fa-brands fa-react"></i
+        ></span>
+        <span class="work__item" data-filter=".js"
+          >JS Vanilla <i class="fa-brands fa-square-js"></i
+        ></span>
 
-            <div class="proyecto mix react fav ts">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-incapacities-system-ts"><img src="img/img26.png" alt=""></a>
-                <div class="info">
-                    <h4>WORK INCAPACITIES SYSTEM</h4>
-                    <p>TYPESCRIPT, REACT, CSS MODULES</p>
-                </div>
-            </div>
+      </div>
 
-            <div class="proyecto mix react fav ts">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-gym-ts"><img src="img/img24.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT GYM MODERN APP</h4>
-                    <p>TYPESCRIPT, REACT, TAILWIND CSS</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react fav">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-budget-manager"><img src="img/img25.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT Budget Manager</h4>
-                    <p>REACT, CSS, NPM</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react fav fe">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-pokemontrainer"><img src="img/img18-1.png" alt="Pokemon Trainer"></a>
-                <div class="info">
-                    <h4>REACT Pokémon Trainer</h4>
-                    <p>REACT, TAILWIND, FETCH API, CSS</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react fav">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-dashboard"><img src="img/img21-1.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT DASHBOARD</h4>
-                    <p>REACT, TAILWIND CSS</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix native">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-nftapp"><img src="img/img22.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT NATIVE NFT APP</h4>
-                    <p>REACT NATIVE, TAILWIND CSS</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-ecommerce"><img src="img/img23.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT ECOMMERCE</h4>
-                    <p>NEXT JS, REACT, SANITY, STRIPE</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix js">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-crm"><img src="img/img11-1.png" alt=""></a>
-                <div class="info">
-                    <h4>CRM</h4>
-                    <p>CSS, HTML, JS</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react fe">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-criptomonedas"><img src="img/img19-1.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT crypto's quoter</h4>
-                    <p>CSS, REACT, FETCH API</p>
-                </div>
-            </div>
-
-            <div class="proyecto mix react">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-citasveterinaria"><img src="img/img16.png" alt=""></a>
-                <div class="info">
-                    <h4>REACT Veterinary Appointment Manager</h4>
-                    <p>REACT, TAILWIND CSS</p>
-                </div>
-            </div>
-
-            
-            <div class="proyecto mix js">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-Administrarcitas"><img src="img/img10-1.png" alt=""></a>
-                <div class="info">
-                    <h4>Appointment Manager</h4>
-                    <p>CSS, HTML, JS</p>
-                </div>
-            </div>
-            
-
-            <div class="proyecto mix js">
-                <div class="overlay"></div>
-                    <a data-modal-id="pw-buscador"><img src="img/img7.png" alt=""></a>
-                <div class="info">
-                    <h4>Filters</h4>
-                    <p>CSS, HTML, JS</p>
-                </div>
-            </div>
-
-
-    </div>
-
-        <!-- MODAL SECTION -->
-
-        <div id="pw-messi" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img3.png" alt="">
-                        <img src="img/img3-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Es un proyecto propio de HTML, CSS y Javascript en el que se elaboró el diseño de un sitio web de noticias en honor a mi jugador favorito Lionel Messi. Para este proyecto se utilizaron conceptos como CSS GRID, Flexbox y una biblioteca llamada ScrollReveal. Sitio web responsive con @media querys.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-CSS-Messi" target="_blank">Ver Código </a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://messi.danisalgado.com/" target="_blank">Ver Proyecto: "Lionel Messi"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologías utilizadas</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-carrito" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img4.png" alt="">
-                        <img src="img/img4-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Es un proyecto con una estructura inicial con HTML y estilos con CSS de una tienda de cursos en línea. Se agregó contenido dinámico con Javascript en el carrito de compras cuando se agrega un producto, elimina un producto o se vacia por completo el carrito de compras. Para este proyecto se utilizaron conceptos como Funciones, Eventos, Arreglos y LocalStorage para mantener el contenido del carrito aunque se refresque la página</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-Carrito-Compras" target="_blank">Ver código</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://carritodecompras.danisalgado.com/" target="_blank">Ver proyecto: "Carrito de Compras"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologías utilizadas</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt=""> 
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-portafolio" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img6-1.png" alt="">
-                        <img src="img/img6.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Modern web portfolio built with HTML, CSS, and JavaScript. CSS animations were used to give a dynamic effect to certain elements of the website. NPM libraries were used to add effects to the portfolio section. It is a responsive web portfolio using Media Querys.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Portafolio-VersionJulio2022" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://danisalgado.com/" target="_blank">See Demo: "Portfolio WEB"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/npm-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-buscador" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img7.png" alt="">
-                        <img src="img/img7-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>It's a project with an initial structure with HTML and styles with CSS of a filter search simulator of a small car database. Dynamic content was added with JavaScript. Concepts of objects, methods (filter method), functions, and events were used. </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-BusquedaFiltros" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://filtro.danisalgado.com/" target="_blank">See Demo: "Filters"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-cotizador" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img8.png" alt="">
-                        <img src="img/img8-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Es un proyecto con una estructura inicial con HTML y estilos con CSS de un cotizador de seguros. Hay contenido dinámico de Javascript que ayuda a obtener una cotización final de seguros según las condicionas del auto del cliente, para esto nos ayuda el condicional "Switch". También se utilizaron Prototypes que ayudan a asignar funciones exclusivas para constructores.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-CotizadorSeguros" target="_blank">Ver Código</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://cotizador.danisalgado.com/" target="_blank">Ver Proyecto: "Cotizador de seguro"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologías utilizadas</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-gastosemanal" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img9.png" alt="">
-                        <img src="img/img9-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Es un proyecto con una estructura inicial con HTML y estilos con CSS de un control de presupuesto de gastos. Hay contenido dinámico de JavaScript que ayuda a agregar y eliminar gastos, controlando el presupuesto restante cada vez que se añade un nuevo registro. Se utilizaron conceptos de clases, constructores, y métodos. Una clase para leer los datos de la aplicación y otra clase que controla la User Interface.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-GastoSemanal" target="_blank">Ver Código</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://gastosemanal.danisalgado.com/" target="_blank">Ver proyecto: "Gasto Semanal"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologías utilizadas</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-Administrarcitas" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img10.png" alt="">
-                        <img src="img/img10-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>
-                            It's a project with an initial structure with HTML and styles with CSS of a veterinary appointment manager. There is dynamic JavaScript content that helps to add and remove appointments with data from the pet and its owner, having control of the record and being able to edit or delete it from the DOM. Concepts: Modules, Functions, DOM Manipulation.  </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-AdministradorCitas" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://administrarcitas.danisalgado.com/" target="_blank">See Demo: "Appointment Manager"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-crm" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img11.png" alt="">
-                        <img src="img/img11-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>It's a project with an initial structure with HTML and styles with Tailwind CSS of a CRM for a company. There is dynamic JavaScript content that helps add, remove, and edit clients. Concepts of functions and form validation were used. Most importantly, it used the native JavasCript IndexedDB database to store data. </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Proyecto-JS-CRM" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://crm.danisalgado.com/" target="_blank">See Demo: "CRM"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/Tailwind_Logo.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-clima" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img12.png" alt="">
-                        <img src="img/img12-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>It's a project with an initial structure with HTML and styles with Tailwind CSS of a weather status search engine. There is dynamic JavaScript content that helps consume data from a weather API via the Promise FETCH API. Concepts of functions, form validation, and DOM manipulation were used to display the search results in the HTML. </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Buscador-Clima" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://clima.danisalgado.com/" target="_blank">See Demo: "Weather"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/Tailwind_Logo.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-imagenes" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img13.png" alt="">
-                        <img src="img/img13-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>It's a project with an initial structure with HTML and styles with Tailwind CSS from an image bank search engine. There is dynamic content with JavaScript that helps consume data from PIXABAY through the Promise FETCH API.  </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Buscador-imagenes" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://imagenes.danisalgado.com/" target="_blank">See Demo: "Pixabay Images"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/Tailwind_Logo.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
-        </div>
-    
-        <div id="pw-criptomonedas" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img19.png" alt="">
-                        <img src="img/img19-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>React application of a quoter of the 20 cryptocurrencies with the highest market capitalization, applying styles with Styled Components. Fetch API was used to consume data from CRIPTOCOMPARE (API with cryptocurrency information). A Custom Hook was also used for the Select of coins and cryptocurrencies.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Criptomonedas-React" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://criptomonedas.danisalgado.com/" target="_blank">See Demo: "Crypto's Quoter"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/react-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
+      <div class="portfolio__container">
+        <div class="proyecto mix react fav ts">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-incapacities-system-ts"
+            ><img src="img/img26.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>WORK INCAPACITIES SYSTEM</h4>
+            <p>TYPESCRIPT, REACT, CSS MODULES</p>
+          </div>
         </div>
 
-        <div id="pw-pokemontrainer" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img18.png" alt="">
-                        <img src="img/img18-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>React Website styled with Tailwind CSS, of a Pokemon Trainer profile. Hooks useState and useEffect(LocalStorage and API ) were used. On the 1st page, you have to fill out a form with your personal data (Form validation). On the 2nd page, the App allows you to consume PokeApi data to choose a Pokémon team. On the final page, all your data and your pokemon team are on the screen. </p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Pokemon-Trainer-App-React" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://pokemontrainer.danisalgado.com/" target="_blank">See Demo: "Pokémon Trainer"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/Tailwind_Logo.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/react-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
+        <div class="proyecto mix react fav next">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-quiosco-app"
+            ><img src="img/img27.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>RESTAURANT QUIOSCO APP</h4>
+            <p>NEXT JS, REACT, MYSQL, TAILWIND CSS</p>
+          </div>
         </div>
 
-        <div id="pw-planificadorgastos" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img17.png" alt="">
-                        <img src="img/img17-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>React app with CSS styling of an expense manager. Hooks useState and useEffect were used. All information is stored in LocalStorage. NPM libraries were used for the expense progress bar (React Circular Progress Bar) and to edit or delete each expense with a side swipe (React Swipeable List).</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Control-Gastos-React" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://planificadorgastos.danisalgado.com/" target="_blank">See Demo: "React Expenses Planner"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies:</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/react-icon.png" alt="">
-                            <img src="img/npm-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
+        <div class="proyecto mix react fav">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-budget-manager"
+            ><img src="img/img25.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>REACT Budget Manager</h4>
+            <p>REACT, CSS, NPM</p>
+          </div>
         </div>
 
-        <div id="pw-citasveterinaria" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img16.png" alt="">
-                        <img src="img/img16-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>
-                            React app styled with Tailwind CSS for a vet appointment manager. We can add, edit or delete appointments on the screen. Information is stored in Local Storage. Hooks useState and useEffect were used. Concepts: Local Storage, Hooks, Props.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Citas-Veterinaria-React" target="_blank">See Code</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://citasveterinaria.danisalgado.com/" target="_blank">See Demo: "Appointment Manager"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Technologies</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/Tailwind_Logo.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/react-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
+        <div class="proyecto mix react next">
+            <div class="overlay"></div>
+            <a data-modal-id="pw-guitar-next"><img src="img/img28.png" alt="" /></a>
+            <div class="info">
+              <h4>REACT GUITAR ECOMMERCE</h4>
+              <p>NEXTJS, REACT, CSS MODULES, POSTGRESQL</p>
             </div>
+          </div>
+
+        <div class="proyecto mix react ts">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-gym-ts"><img src="img/img24.png" alt="" /></a>
+          <div class="info">
+            <h4>REACT GYM MODERN APP</h4>
+            <p>TYPESCRIPT, REACT, TAILWIND CSS</p>
+          </div>
         </div>
 
-        <div id="pw-gifs" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-            <div class="eins-modal-content">
-                <div class="eins-modal-close"> </div>
-                <div class="pw-content">
-                    <div class="eins-modal-preview">
-                        <img src="img/img15.png" alt="">
-                        <img src="img/img15-1.png" alt="">
-                    </div>
-                    <div class="eins-modal-text">
-                        <p>Aplicación React utilizando Hooks useState, useEffect y CustomHooks para crear una búsqueda de Gifs extrayendo información de una API externa con Fetch API y Async Await.</p>
-                    <div class="eins-modal-text-2">
-                        <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Gif-Expert-App" target="_blank">Ver Código</a> <br>
-                        <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://gifs.danisalgado.com/" target="_blank">Ver proyecto: "Gif Expert App"</a>
-                    </div>
-                    <div class="eins-modal-text-3">
-                        <span>Tecnologías utilizadas</span>
-                        <div class="eins-modal-tec">
-                            <img src="img/html-icon.png" alt="">
-                            <img src="img/css-icon.png" alt="">
-                            <img src="img/js-icon.png" alt="">
-                            <img src="img/react-icon.png" alt="">
-                        </div>
-                    </div>
-                    </div>          
-                </div>
-            </div>
+        <div class="proyecto mix react fe">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-pokemontrainer"
+            ><img src="img/img18-1.png" alt="Pokemon Trainer"
+          /></a>
+          <div class="info">
+            <h4>REACT Pokémon Trainer</h4>
+            <p>REACT, TAILWIND, FETCH API, CSS</p>
+          </div>
         </div>
+
+        <div class="proyecto mix react">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-dashboard"
+            ><img src="img/img21-1.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>REACT DASHBOARD</h4>
+            <p>REACT, TAILWIND CSS</p>
+          </div>
+        </div>
+
+        <div class="proyecto mix native">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-nftapp"><img src="img/img22.png" alt="" /></a>
+          <div class="info">
+            <h4>REACT NATIVE NFT APP</h4>
+            <p>REACT NATIVE, TAILWIND CSS</p>
+          </div>
+        </div>
+
+        <div class="proyecto mix react next">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-ecommerce"><img src="img/img23.png" alt="" /></a>
+          <div class="info">
+            <h4>REACT ECOMMERCE</h4>
+            <p>NEXT JS, REACT, SANITY, STRIPE</p>
+          </div>
+        </div>
+
+        <div class="proyecto mix js">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-crm"><img src="img/img11-1.png" alt="" /></a>
+          <div class="info">
+            <h4>CRM</h4>
+            <p>CSS, HTML, JS</p>
+          </div>
+        </div>
+
+        <div class="proyecto mix react fe">
+          <div class="overlay"></div>
+          <a data-modal-id="pw-criptomonedas"
+            ><img src="img/img19-1.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>REACT crypto's quoter</h4>
+            <p>CSS, REACT, FETCH API</p>
+          </div>
+        </div>
+
+      <!-- MODAL SECTION -->
+
+      <div
+        id="pw-messi"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img3.png" alt="" />
+              <img src="img/img3-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Es un proyecto propio de HTML, CSS y Javascript en el que se
+                elaboró el diseño de un sitio web de noticias en honor a mi
+                jugador favorito Lionel Messi. Para este proyecto se utilizaron
+                conceptos como CSS GRID, Flexbox y una biblioteca llamada
+                ScrollReveal. Sitio web responsive con @media querys.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-CSS-Messi"
+                  target="_blank"
+                  >Ver Código
+                </a>
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="https://messi.danisalgado.com/" target="_blank"
+                  >Ver Proyecto: "Lionel Messi"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Tecnologías utilizadas</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-carrito"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img4.png" alt="" />
+              <img src="img/img4-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Es un proyecto con una estructura inicial con HTML y estilos con
+                CSS de una tienda de cursos en línea. Se agregó contenido
+                dinámico con Javascript en el carrito de compras cuando se
+                agrega un producto, elimina un producto o se vacia por completo
+                el carrito de compras. Para este proyecto se utilizaron
+                conceptos como Funciones, Eventos, Arreglos y LocalStorage para
+                mantener el contenido del carrito aunque se refresque la página
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-Carrito-Compras"
+                  target="_blank"
+                  >Ver código</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a
+                  href="http://carritodecompras.danisalgado.com/"
+                  target="_blank"
+                  >Ver proyecto: "Carrito de Compras"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Tecnologías utilizadas</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-portafolio"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img6-1.png" alt="" />
+              <img src="img/img6.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Modern web portfolio built with HTML, CSS, and JavaScript. CSS
+                animations were used to give a dynamic effect to certain
+                elements of the website. NPM libraries were used to add effects
+                to the portfolio section. It is a responsive web portfolio using
+                Media Querys.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Portafolio-VersionJulio2022"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://danisalgado.com/" target="_blank"
+                  >See Demo: "Portfolio WEB"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/npm-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-buscador"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img7.png" alt="" />
+              <img src="img/img7-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                It's a project with an initial structure with HTML and styles
+                with CSS of a filter search simulator of a small car database.
+                Dynamic content was added with JavaScript. Concepts of objects,
+                methods (filter method), functions, and events were used.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-BusquedaFiltros"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://filtro.danisalgado.com/" target="_blank"
+                  >See Demo: "Filters"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-cotizador"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img8.png" alt="" />
+              <img src="img/img8-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Es un proyecto con una estructura inicial con HTML y estilos con
+                CSS de un cotizador de seguros. Hay contenido dinámico de
+                Javascript que ayuda a obtener una cotización final de seguros
+                según las condicionas del auto del cliente, para esto nos ayuda
+                el condicional "Switch". También se utilizaron Prototypes que
+                ayudan a asignar funciones exclusivas para constructores.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-CotizadorSeguros"
+                  target="_blank"
+                  >Ver Código</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://cotizador.danisalgado.com/" target="_blank"
+                  >Ver Proyecto: "Cotizador de seguro"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Tecnologías utilizadas</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-gastosemanal"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img9.png" alt="" />
+              <img src="img/img9-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Es un proyecto con una estructura inicial con HTML y estilos con
+                CSS de un control de presupuesto de gastos. Hay contenido
+                dinámico de JavaScript que ayuda a agregar y eliminar gastos,
+                controlando el presupuesto restante cada vez que se añade un
+                nuevo registro. Se utilizaron conceptos de clases,
+                constructores, y métodos. Una clase para leer los datos de la
+                aplicación y otra clase que controla la User Interface.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-GastoSemanal"
+                  target="_blank"
+                  >Ver Código</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://gastosemanal.danisalgado.com/" target="_blank"
+                  >Ver proyecto: "Gasto Semanal"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Tecnologías utilizadas</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-Administrarcitas"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img10.png" alt="" />
+              <img src="img/img10-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                It's a project with an initial structure with HTML and styles
+                with CSS of a veterinary appointment manager. There is dynamic
+                JavaScript content that helps to add and remove appointments
+                with data from the pet and its owner, having control of the
+                record and being able to edit or delete it from the DOM.
+                Concepts: Modules, Functions, DOM Manipulation.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-AdministradorCitas"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a
+                  href="http://administrarcitas.danisalgado.com/"
+                  target="_blank"
+                  >See Demo: "Appointment Manager"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-crm"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img11.png" alt="" />
+              <img src="img/img11-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                It's a project with an initial structure with HTML and styles
+                with Tailwind CSS of a CRM for a company. There is dynamic
+                JavaScript content that helps add, remove, and edit clients.
+                Concepts of functions and form validation were used. Most
+                importantly, it used the native JavasCript IndexedDB database to
+                store data.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Proyecto-JS-CRM"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://crm.danisalgado.com/" target="_blank"
+                  >See Demo: "CRM"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/Tailwind_Logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-clima"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img12.png" alt="" />
+              <img src="img/img12-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                It's a project with an initial structure with HTML and styles
+                with Tailwind CSS of a weather status search engine. There is
+                dynamic JavaScript content that helps consume data from a
+                weather API via the Promise FETCH API. Concepts of functions,
+                form validation, and DOM manipulation were used to display the
+                search results in the HTML.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Buscador-Clima"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://clima.danisalgado.com/" target="_blank"
+                  >See Demo: "Weather"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/Tailwind_Logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-imagenes"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img13.png" alt="" />
+              <img src="img/img13-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                It's a project with an initial structure with HTML and styles
+                with Tailwind CSS from an image bank search engine. There is
+                dynamic content with JavaScript that helps consume data from
+                PIXABAY through the Promise FETCH API.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Buscador-imagenes"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://imagenes.danisalgado.com/" target="_blank"
+                  >See Demo: "Pixabay Images"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/Tailwind_Logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-criptomonedas"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img19.png" alt="" />
+              <img src="img/img19-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                React application of a quoter of the 20 cryptocurrencies with
+                the highest market capitalization, applying styles with Styled
+                Components. Fetch API was used to consume data from
+                CRIPTOCOMPARE (API with cryptocurrency information). A Custom
+                Hook was also used for the Select of coins and cryptocurrencies.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Criptomonedas-React"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://criptomonedas.danisalgado.com/" target="_blank"
+                  >See Demo: "Crypto's Quoter"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/react-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-pokemontrainer"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img18.png" alt="" />
+              <img src="img/img18-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                React Website styled with Tailwind CSS, of a Pokemon Trainer
+                profile. Hooks useState and useEffect(LocalStorage and API )
+                were used. On the 1st page, you have to fill out a form with
+                your personal data (Form validation). On the 2nd page, the App
+                allows you to consume PokeApi data to choose a Pokémon team. On
+                the final page, all your data and your pokemon team are on the
+                screen.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Pokemon-Trainer-App-React"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a
+                  href="https://pokemontrainer.danisalgado.com/"
+                  target="_blank"
+                  >See Demo: "Pokémon Trainer"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/Tailwind_Logo.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/react-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-planificadorgastos"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img17.png" alt="" />
+              <img src="img/img17-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                React app with CSS styling of an expense manager. Hooks useState
+                and useEffect were used. All information is stored in
+                LocalStorage. NPM libraries were used for the expense progress
+                bar (React Circular Progress Bar) and to edit or delete each
+                expense with a side swipe (React Swipeable List).
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Control-Gastos-React"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a
+                  href="http://planificadorgastos.danisalgado.com/"
+                  target="_blank"
+                  >See Demo: "React Expenses Planner"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies:</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/react-icon.png" alt="" />
+                  <img src="img/npm-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-citasveterinaria"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img16.png" alt="" />
+              <img src="img/img16-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                React app styled with Tailwind CSS for a vet appointment
+                manager. We can add, edit or delete appointments on the screen.
+                Information is stored in Local Storage. Hooks useState and
+                useEffect were used. Concepts: Local Storage, Hooks, Props.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Citas-Veterinaria-React"
+                  target="_blank"
+                  >See Code</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a
+                  href="http://citasveterinaria.danisalgado.com/"
+                  target="_blank"
+                  >See Demo: "Appointment Manager"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Technologies</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/Tailwind_Logo.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/react-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="pw-gifs"
+        class="eins-modal"
+        data-options="openTransition: expandIn; openDuration: 200;"
+      >
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+          <div class="pw-content">
+            <div class="eins-modal-preview">
+              <img src="img/img15.png" alt="" />
+              <img src="img/img15-1.png" alt="" />
+            </div>
+            <div class="eins-modal-text">
+              <p>
+                Aplicación React utilizando Hooks useState, useEffect y
+                CustomHooks para crear una búsqueda de Gifs extrayendo
+                información de una API externa con Fetch API y Async Await.
+              </p>
+              <div class="eins-modal-text-2">
+                <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+                ><a
+                  href="https://github.com/danielsalvas/Gif-Expert-App"
+                  target="_blank"
+                  >Ver Código</a
+                >
+                <br />
+                <span
+                  ><i class="fa-solid fa-arrow-up-right-from-square"
+                    >&nbsp;&nbsp;</i
+                  ></span
+                ><a href="http://gifs.danisalgado.com/" target="_blank"
+                  >Ver proyecto: "Gif Expert App"</a
+                >
+              </div>
+              <div class="eins-modal-text-3">
+                <span>Tecnologías utilizadas</span>
+                <div class="eins-modal-tec">
+                  <img src="img/html-icon.png" alt="" />
+                  <img src="img/css-icon.png" alt="" />
+                  <img src="img/js-icon.png" alt="" />
+                  <img src="img/react-icon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div id="pw-bankmodernapp" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img20.png" alt="">
-                    <img src="img/img20-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Modern web page made with React and applying styles with Tailwind CSS (Responsive and mobile-first). Concepts: Functional components, folder structure, Figma Design, CSS tailwind, flex fundamentals, and responsive design mobile first.</p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Bank-Modern-React" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://bankmodernapp.danisalgado.com/" target="_blank">See Demo: "Bank Modern App"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/Tailwind_Logo.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-bankmodernapp"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img20.png" alt="" />
+            <img src="img/img20-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Modern web page made with React and applying styles with Tailwind
+              CSS (Responsive and mobile-first). Concepts: Functional
+              components, folder structure, Figma Design, CSS tailwind, flex
+              fundamentals, and responsive design mobile first.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/Bank-Modern-React"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a href="http://bankmodernapp.danisalgado.com/" target="_blank"
+                >See Demo: "Bank Modern App"</a
+              >
             </div>
-        </div>
-    </div>
-    
-    <div id="pw-dashboard" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img21.png" alt="">
-                    <img src="img/img21-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Dashboard app built with React and styled with TailwindCSS. This panel includes a Dashboard, 3 pages (Orders, customers, employees), 4 applications (Calendar, color picker, Kanban, and editor), and 7 fully functional charts. Concepts:  Hooks, Context API, folder structure, React Router, and UI Components Syncfusion library. </p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Dashboard-React" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://dashboard.danisalgado.com/" target="_blank">See Demo: "Dashboard"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/Tailwind_Logo.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                    </div>
-                </div>
-                </div>          
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="pw-nftapp" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img22.png" alt="">
-                    <img src="img/img22-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>React Native App published on EXPO CLI. In the application you can navigate between cards of NFTs and be able to select "More details" in each one. React Native components like FlatList, ScrollView, SafeAreaView, StatusBar were used. For styles, inline styles were used on elements. </p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/showcase-nft-app-react" target="_blank">See Code Showcase</a> <br>
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/React-native-nft" target="_blank">See Code NFT App</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://nativenft.danisalgado.com/" target="_blank">See Demo: "Showcase"</a><br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://expo.dev/@danielsalvas/react_native_nft?serviceType=classic&distribution=expo-go" target="_blank">See Demo: "NFT App"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/Tailwind_Logo.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-dashboard"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img21.png" alt="" />
+            <img src="img/img21-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Dashboard app built with React and styled with TailwindCSS. This
+              panel includes a Dashboard, 3 pages (Orders, customers,
+              employees), 4 applications (Calendar, color picker, Kanban, and
+              editor), and 7 fully functional charts. Concepts: Hooks, Context
+              API, folder structure, React Router, and UI Components Syncfusion
+              library.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/Dashboard-React"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a href="http://dashboard.danisalgado.com/" target="_blank"
+                >See Demo: "Dashboard"</a
+              >
             </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="pw-ecommerce" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img23.png" alt="">
-                    <img src="img/img23-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Ecommerce website built with React. The website includes modern design and animations, the ability to add and edit products using a Sanity, all advanced cart, and checkout functionalities, and complete integration with Stripe so that you can cover real payments. Concepts: Hooks, Context, Next.JS, Stripe and Sanity. </p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/ecommerce-react" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://ecommerce-react-nu.vercel.app/" target="_blank">See Demo: "Ecommerce"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/Tailwind_Logo.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                        <img src="img/next1.png" alt="">
-                        <img src="img/Sanity.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-nftapp"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img22.png" alt="" />
+            <img src="img/img22-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              React Native App published on EXPO CLI. In the application you can
+              navigate between cards of NFTs and be able to select "More
+              details" in each one. React Native components like FlatList,
+              ScrollView, SafeAreaView, StatusBar were used. For styles, inline
+              styles were used on elements.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/showcase-nft-app-react"
+                target="_blank"
+                >See Code Showcase</a
+              >
+              <br />
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/React-native-nft"
+                target="_blank"
+                >See Code NFT App</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a href="https://nativenft.danisalgado.com/" target="_blank"
+                >See Demo: "Showcase"</a
+              ><br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://expo.dev/@danielsalvas/react_native_nft?serviceType=classic&distribution=expo-go"
+                target="_blank"
+                >See Demo: "NFT App"</a
+              >
             </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="pw-gym-ts" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img24.png" alt="">
-                    <img src="img/img24-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>Modern GYM web page made with React and applying styles with Tailwind CSS (Responsive and mobile-first). Concepts: React, Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Mobile Menu Animation, Form Submit, React Anchor Link Smooth Scroll. </p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/GYM-TYPESCRIPT-REACT" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://gym-ts.danisalgado.com/" target="_blank">See Demo: "EVOGYM"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/Tailwind_Logo.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                        <img src="img/types.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-ecommerce"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img23.png" alt="" />
+            <img src="img/img23-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Ecommerce website built with React. The website includes modern
+              design and animations, the ability to add and edit products using
+              a Sanity, all advanced cart, and checkout functionalities, and
+              complete integration with Stripe so that you can cover real
+              payments. Concepts: Hooks, Context, Next.JS, Stripe and Sanity.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/ecommerce-react"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a href="https://ecommerce-react-nu.vercel.app/" target="_blank"
+                >See Demo: "Ecommerce"</a
+              >
             </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+                <img src="img/next1.png" alt="" />
+                <img src="img/Sanity.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="pw-budget-manager" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img25.png" alt="">
-                    <img src="img/img25-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>React app of an budget manager. Hooks useState and useEffect were used. All information is stored in LocalStorage. NPM libraries were used for the expense progress bar (React Circular Progress Bar) and to edit or delete each expense with a side swipe (React Swipeable List). Zustand was used for global state management.</p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Budget-manager-zustand" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="http://budget-manager-zustand.danisalgado.com/" target="_blank">See Demo: "React Budget Manager"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/html-icon.png" alt="">
-                        <img src="img/css-icon.png" alt="">
-                        <img src="img/js-icon.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                        <img src="img/npm-icon.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-gym-ts"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img24.png" alt="" />
+            <img src="img/img24-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              Modern GYM web page made with React and applying styles with
+              Tailwind CSS (Responsive and mobile-first). Concepts: React,
+              Typescript, Vite, Tailwind, Hero Icons, Framer Motion, Mobile Menu
+              Animation, Form Submit, React Anchor Link Smooth Scroll.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/GYM-TYPESCRIPT-REACT"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a href="http://gym-ts.danisalgado.com/" target="_blank"
+                >See Demo: "EVOGYM"</a
+              >
             </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+                <img src="img/types.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="pw-incapacities-system-ts" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
-        <div class="eins-modal-content">
-            <div class="eins-modal-close"> </div>
-            <div class="pw-content">
-                <div class="eins-modal-preview">
-                    <img src="img/img26-2.png" alt="">
-                    <img src="img/img26.png" alt="">
-                    <img src="img/img26-1.png" alt="">
-                </div>
-                <div class="eins-modal-text">
-                    <p>React and Typescript system with login and Sign-Up authentication in firebase. We can add work incapacities to the system with react hook form, and the data stored in the Google Firebase database. Depending on the employee type in the Sign-Up Form (HR Specialist or Employee) you can see all the employees' incapacities and HR Form (HR Specialist View) or just the employee incapacities and Employee Form (Employee View). Also, you can filter and delete the incapacities data. All the state management is with Zustand library. Material UI like React Data Table Component and Sweetalert 2 were used. The system is entirely mobile-responsive. </p>
-                <div class="eins-modal-text-2">
-                    <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span><a href="https://github.com/danielsalvas/Work-Incapacity-System-React" target="_blank">See Code</a> <br>
-                    <span><i class="fa-solid fa-arrow-up-right-from-square">&nbsp;&nbsp;</i></span><a href="https://work-incapacities-system.danisalgado.com/" target="_blank">See Demo: "React Work Incapacities System"</a>
-                </div>
-                <div class="eins-modal-text-3">
-                    <span>Technologies:</span>
-                    <div class="eins-modal-tec">
-                        <img src="img/css-icon.png" alt="">
-                        <img src="img/js-icon.png" alt="">
-                        <img src="img/react-icon.png" alt="">
-                        <img src="img/types.png" alt="">
-                    </div>
-                </div>
-                </div>          
+    <div
+      id="pw-budget-manager"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img25.png" alt="" />
+            <img src="img/img25-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              React app of an budget manager. Hooks useState and useEffect were
+              used. All information is stored in LocalStorage. NPM libraries
+              were used for the expense progress bar (React Circular Progress
+              Bar) and to edit or delete each expense with a side swipe (React
+              Swipeable List). Zustand was used for global state management.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/Budget-manager-zustand"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="http://budget-manager-zustand.danisalgado.com/"
+                target="_blank"
+                >See Demo: "React Budget Manager"</a
+              >
             </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/html-icon.png" alt="" />
+                <img src="img/css-icon.png" alt="" />
+                <img src="img/js-icon.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+                <img src="img/npm-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    <div
+      id="pw-incapacities-system-ts"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img26-2.png" alt="" />
+            <img src="img/img26.png" alt="" />
+            <img src="img/img26-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+              React and Typescript system with login and Sign-Up authentication
+              in firebase. We can add work incapacities to the system with react
+              hook form, and the data stored in the Google Firebase database.
+              Depending on the employee type in the Sign-Up Form (HR Specialist
+              or Employee) you can see all the employees' incapacities and HR
+              Form (HR Specialist View) or just the employee incapacities and
+              Employee Form (Employee View). Also, you can filter and delete the
+              incapacities data. All the state management is with Zustand
+              library. Material UI like React Data Table Component and
+              Sweetalert 2 were used. The system is entirely mobile-responsive.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/Work-Incapacity-System-React"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://work-incapacities-system.danisalgado.com/"
+                target="_blank"
+                >See Demo: "React Work Incapacities System"</a
+              >
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/css-icon.png" alt="" />
+                <img src="img/js-icon.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+                <img src="img/types.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="pw-guitar-next"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img28-1.png" alt="" />
+            <img src="img/img28.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+                React website built with Next JS and Strapi CMS and PostgreSQL for the backend.  We can create new entries for products in the store and posts for the blog. Also, we can add, edit or delete the Guitar products in the shopping cart. Styles were built with CSS Modules for each page and component. 
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/GuitarLA-NextJS"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://guitar-la-next-js-delta.vercel.app/"
+                target="_blank"
+                >See Demo: "Guitar LA Store"</a
+              >
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://guitarla-strapi-t7f0.onrender.com/admin/auth/login"
+                target="_blank"
+                >See Admin: "Guitar LA Store"</a
+              >
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/next1.png" alt="" />
+                <img src="img/css-icon.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="pw-quiosco-app"
+      class="eins-modal"
+      data-options="openTransition: expandIn; openDuration: 200;"
+    >
+      <div class="eins-modal-content">
+        <div class="eins-modal-close"></div>
+        <div class="pw-content">
+          <div class="eins-modal-preview">
+            <img src="img/img27.png" alt="" />
+            <img src="img/img27-1.png" alt="" />
+          </div>
+          <div class="eins-modal-text">
+            <p>
+                React Full-Stack website built with Next JS and Tailwind CSS for the front-end, and Prisma and MYSQL for the back-end. We can navigate different food categories on our menu website and add them to the order. We can modify the order through a series of steps and confirm our order with our name. All the data is stored in a MYSQL database and the order can be displayed in real time in an administration panel.
+            </p>
+            <div class="eins-modal-text-2">
+              <span><i class="fa-brands fa-github">&nbsp;&nbsp;</i></span
+              ><a
+                href="https://github.com/danielsalvas/QuioscoApp-NextJS"
+                target="_blank"
+                >See Code</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://quioscoapp-nextjs-production.up.railway.app/"
+                target="_blank"
+                >See Demo: "Quiosco Restaurant"</a
+              >
+              <br />
+              <span
+                ><i class="fa-solid fa-arrow-up-right-from-square"
+                  >&nbsp;&nbsp;</i
+                ></span
+              ><a
+                href="https://quioscoapp-nextjs-production.up.railway.app/admin"
+                target="_blank"
+                >See Admin: "Quiosco Restaurant"</a
+              >
+            </div>
+            <div class="eins-modal-text-3">
+              <span>Technologies:</span>
+              <div class="eins-modal-tec">
+                <img src="img/next1.png" alt="" />
+                <img src="img/Tailwind_Logo.png" alt="" />
+                <img src="img/react-icon.png" alt="" />
+                <img src="img/sql-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- SECCION CONTACTO -->
 
     <section id="contact">
-        <h3 class="titulo-seccion">Mail Me <i class="fa-solid fa-envelope-circle-check"></i></h3>
-        <div class="contenedor-form">
-            <form class="form" action="https://formspree.io/f/mzboobeg" method="POST">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Name" class="input-mitad" name="name" required>
-                    <input type="text" placeholder="Email" class="input-mitad" name="email" required>
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Subject" class="input-full" name="asunto" required>
-                </div>
-                <div class="fila">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message goes here..." class="input-full" required></textarea>
-                </div>
+      <h3 class="titulo-seccion">
+        Mail Me <i class="fa-solid fa-envelope-circle-check"></i>
+      </h3>
+      <div class="contenedor-form">
+        <form
+          class="form"
+          action="https://formspree.io/f/mzboobeg"
+          method="POST"
+        >
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Name"
+              class="input-mitad"
+              name="name"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="input-mitad"
+              name="email"
+              required
+            />
+          </div>
+          <div class="fila">
+            <input
+              type="text"
+              placeholder="Subject"
+              class="input-full"
+              name="asunto"
+              required
+            />
+          </div>
+          <div class="fila">
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message goes here..."
+              class="input-full"
+              required
+            ></textarea>
+          </div>
 
-                <input type="submit" value="SEND" class="btn-enviar">
-            </form>
-        </div>
+          <input type="submit" value="SEND" class="btn-enviar" />
+        </form>
+      </div>
     </section>
 
     <!-- SECCION FOOTER -->
 
     <footer>
-        <p>All Rights Reserved - 2023</p>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/daniel-salgado-a518a5133/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/danielsalvas" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/danielsalvas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+      <p>All Rights Reserved - 2023</p>
+      <div class="redes">
+        <a
+          href="https://www.linkedin.com/in/daniel-salgado-a518a5133/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/danielsalvas" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/danielsalvas/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="/mixitup.js"></script>
     <script src="/mixitup.min.js"></script>
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
